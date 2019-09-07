@@ -36,14 +36,23 @@ public class LeetCode1021 {
 
     public static void main(String[] args) {
         LeetCode1021 leetCode1021 = new LeetCode1021();
-        String str = "(()())(())";
-        leetCode1021.removeOuterParentheses(str);
+        String str = "(()())(())(()(()))";
+        String result = leetCode1021.removeOuterParentheses(str);
+        System.out.println(result);
     }
 
     public String removeOuterParentheses(String S) {
-
-        
-        return null;
+        StringBuilder builder = new StringBuilder();
+        int count = 0;
+        for (char c : S.toCharArray()) {
+            if (c == '(' && count++ > 0) {
+                builder.append(c);
+            }
+            if (c == ')' && count-- > 1) {
+                builder.append(c);
+            }
+        }
+        return builder.toString();
     }
 
 }
