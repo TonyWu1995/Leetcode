@@ -1,5 +1,7 @@
 package com.company.leetcode;
 
+import com.sun.source.tree.Tree;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +14,16 @@ public class LeetCode965 {
 //
 //
     public static void main(String[] args) {
-
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(1);
+        root.right = new TreeNode(1);
+        root.left.left = new TreeNode(1);
+        root.left.right = new TreeNode(1);
+        root.right.left = null;
+        root.right.right = new TreeNode(1);
+        LeetCode965 leetCode965 = new LeetCode965();
+        final boolean result = leetCode965.isUnivalTree(root);
+        System.out.println(result);
     }
 
     List<Integer> valueList;
@@ -36,7 +47,7 @@ public class LeetCode965 {
     }
 
 
-    class TreeNode {
+    static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
