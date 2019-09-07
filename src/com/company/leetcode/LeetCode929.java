@@ -3,7 +3,7 @@ package com.company.leetcode;
 import java.util.HashSet;
 import java.util.Set;
 
-public class LeeCode929 {
+public class LeetCode929 {
 
 //    Every email consists of a local name and a domain name, separated by the @ sign.
 //
@@ -28,9 +28,9 @@ public class LeeCode929 {
 //    Explanation: "testemail@leetcode.com" and "testemail@lee.tcode.com" actually receive mails
 
     public static void main(String[] args) {
-        LeeCode929 leeCode929 = new LeeCode929();
+        LeetCode929 leetCode929 = new LeetCode929();
         String emails[] = new String[]{"test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"};
-        int result = leeCode929.numUniqueEmails(emails);
+        int result = leetCode929.numUniqueEmails(emails);
         System.out.println(result);
     }
 
