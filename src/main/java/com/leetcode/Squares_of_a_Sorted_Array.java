@@ -31,7 +31,6 @@ public class Squares_of_a_Sorted_Array {
 
     public int[] sortedSquares(int[] A) {
         return Arrays.stream(A).map(i -> i * i).sorted().toArray();
-
     }
 
 }
