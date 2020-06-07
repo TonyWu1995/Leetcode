@@ -1,4 +1,4 @@
-package com.leetcode;
+package com.solution.leetcode;
 
 public class Find_Numbers_with_Even_Number_of_Digits {
 

@@ -1,4 +1,4 @@
-package com.leetcode;
+package com.solution.leetcode;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
