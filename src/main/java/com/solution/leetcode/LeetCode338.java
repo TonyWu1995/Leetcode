@@ -8,6 +8,7 @@ public class LeetCode338 {
         LeetCode338 leetCode338 = new LeetCode338();
         int[] bits = leetCode338.countBits(5);
         System.out.println(Arrays.toString(bits));
+        System.out.println(3>>1);
     }
 
     public int[] countBits(int n) {

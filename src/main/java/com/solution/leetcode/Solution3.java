@@ -46,9 +46,9 @@ public class Solution3 {
         String S = "1A 2F 1C";
         System.out.println(solution.solution(N, S));
 
-        N = 1;
-        S = "";
-        System.out.println(solution.solution(N, S));
+//        N = 1;
+//        S = "";
+//        System.out.println(solution.solution(N, S));
 
     }
 
