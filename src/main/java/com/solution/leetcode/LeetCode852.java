@@ -19,15 +19,32 @@ public class LeetCode852 {
 
     public static void main(String[] args) {
         LeetCode852 leetCode852 = new LeetCode852();
-        int A[] = new int[]{0,2,1,0};
+        int A[] = new int[]{0, 2, 1, 0};
         int result = leetCode852.peakIndexInMountainArray(A);
         System.out.println(result);
     }
 
-    public int peakIndexInMountainArray(int[] A) {
+
+    //O(n)
+    public int peakIndexInMountainArray2(int[] A) {
         int result = 0;
-        while (A[result] < A[result + 1]) result++;
+        while (A[result] < A[result + 1]) {
+            result++;
+        }
         return result;
+    }
+
+    public int peakIndexInMountainArray(int[] arr) {
+        int left = 0, right = arr.length - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (arr[mid] < arr[mid + 1]) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        return left;
     }
 
 }
