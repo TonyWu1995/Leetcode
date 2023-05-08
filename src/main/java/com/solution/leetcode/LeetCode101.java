@@ -1,7 +1,5 @@
 package com.solution.leetcode;
 
-import com.solution.LeetCode637;
-
 public class LeetCode101 {
 
     private static class TreeNode {

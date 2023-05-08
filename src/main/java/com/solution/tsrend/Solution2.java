@@ -1,4 +1,4 @@
-package com.solution.leetcode;
+package com.solution.tsrend;
 
 import java.util.*;
 

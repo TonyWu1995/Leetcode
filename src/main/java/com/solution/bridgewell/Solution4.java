@@ -1,4 +1,4 @@
-package com.solution.leetcode.bridgewell;
+package com.solution.bridgewell;
 
 public class Solution4 {
 

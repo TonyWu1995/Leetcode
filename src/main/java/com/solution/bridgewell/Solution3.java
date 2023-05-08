@@ -1,4 +1,4 @@
-package com.solution.leetcode.bridgewell;
+package com.solution.bridgewell;
 
 import java.util.HashMap;
 import java.util.List;

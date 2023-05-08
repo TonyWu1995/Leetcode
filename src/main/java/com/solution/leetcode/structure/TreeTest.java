@@ -1,4 +1,4 @@
-package com.solution.structure;
+package com.solution.leetcode.structure;
 
 public class TreeTest {
 
